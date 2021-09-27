@@ -2,8 +2,66 @@
 
 .container
   @include container
+
+.hero, .bio, .skills
+  margin-bottom: 3rem  
+/////////////////////////////////HERO 
+.hero
   min-height: 100vh
   display: grid
-  grid-template-columns: 1fr 1fr
+  grid-template-columns: 1fr
   justify-items: center
   align-items: center
+
+
+.firstCol  
+  display: flex
+  flex-direction: column
+
+
+.name
+  align-self: center
+  line-height: 120%
+  font-family: $poppins
+  font-weight: 500
+  font-size: 2.3rem
+
+.area
+  font-family: $jost
+  color: $grey
+  font-style: italic
+  font-weight: 300
+  font-size: 1rem
+
+
+/////////////////////////////////////BIO
+
+.bio
+  display: grid
+  grid-template-columns: 1fr
+  justify-items: center
+  align-items: center
+
+.bio_title
+  font-size: 2rem
+  font-weight: 500
+
+.bio_description
+  font-weight: 300
+
+.bio_figure
+  margin-block: 25px
+  
+//////////////////////////////////SKILLS
+
+.skills_title
+  font-size: 1.5rem
+  line-height: 120%
+  font-weight: 500
+
+.skills_description
+  margin-block: 1em
+  font-weight: 300
+
+.skillsList
+  margin-bottom: 1rem 

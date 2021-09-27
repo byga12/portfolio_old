@@ -2,28 +2,33 @@
 
 body
   font-family: $jost
-  font-size: 1.5rem
   color: $black
 
-
-
 .nav
+  padding-top: 0.3rem
+  background: white
   position: fixed
   width: 100%
   display: flex
   justify-content: center
 
 .links
-   padding: 1.5rem
-   display: flex
-   justify-content: center
-   gap: 110px
-   border-bottom: .4rem solid $lightGrey
-   width: 90%
+  padding: 1vw
+  padding-bottom: 0.5rem 
+  display: flex
+  justify-content: center
+  gap: 7vw
+  border-bottom: .3rem solid $lightGrey
+  width: 90%
    
 
 .link
+  white-space: nowrap
   text-decoration: none
 
 .link:visited
   color: $black
+
+@media (min-width: 420px)
+  .link
+    font-size: 1.6rem
