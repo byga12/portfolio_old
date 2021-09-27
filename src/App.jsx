@@ -1,13 +1,15 @@
 import Navigation from "./components/Navigation/Navigation";
+import {Router, Route} from 'wouter';
 
-
+//PAGES
+import About from './pages/About'
 
 function App() {
   return (
-    <div className="jorge">
+    <Router>
       <Navigation/>
-      
-    </div>
+      <Route path="/about" component={About}/>
+    </Router>
   );
 }
 
