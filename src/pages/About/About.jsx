@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './About.module.sass'
-import profilePhoto from '../img/profile_photo.png'
+import profilePhoto from '../../img/profile_photo.png'
 export default function About() {
   return (
     <div className={s.container}>
@@ -12,7 +12,7 @@ export default function About() {
           <h1 className={s.name}>Gabriel Shimabuku</h1>
           <h3 className={s.area}>frontend web developer</h3>
         </main>
-        <aside>b</aside>
+        {/* <aside className={s.secondCol}></aside> */}
       </article>
 
       <article className={s.bio}>
@@ -28,7 +28,7 @@ export default function About() {
       </article>
 
       <article className={s.skills}>
-        <h2 className={s.skills_title}>Skills & tools i use</h2>
+        <h2 className={s.skills_title}>Skills & tools I use</h2>
         <div className={s.skills_description}>
           <ul className={s.skillsList}>
             <li>HTML5</li>

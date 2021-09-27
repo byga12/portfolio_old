@@ -1,4 +1,4 @@
-@import '../utilities/variables'
+@import '../../utilities/variables'
 
 .container
   @include container
@@ -17,7 +17,6 @@
 .firstCol  
   display: flex
   flex-direction: column
-
 
 .name
   align-self: center
@@ -50,6 +49,7 @@
   font-weight: 300
 
 .bio_figure
+  max-width: 300px
   margin-block: 25px
   
 //////////////////////////////////SKILLS
@@ -65,3 +65,53 @@
 
 .skillsList
   margin-bottom: 1rem 
+
+
+
+
+@media (min-width: 420px)
+  .hero
+    grid-template-columns: 1fr 1fr
+  .name
+    font-size: 3.8rem
+    padding-left: 2vw
+  .area
+    font-size: 1.8rem
+    padding-left: 2vw
+
+
+  .skills
+    margin-top: 8rem
+  .skills_title
+    text-align: center
+    font-size: 2rem
+  .skills_description
+    margin-top: 3rem
+    display: flex
+    font-size: 1.5rem
+    justify-content: space-around
+
+@media (min-width: 800px)
+  .bio
+    grid-template-columns: 1fr 1fr
+
+  .bio_title
+    font-size: 3rem
+  .bio_description
+    order: -1
+    font-size: 1.5rem
+  .bio_content
+    padding-right: 2rem
+    border-right: 2px solid $lightGrey
+  .bio_figure
+    padding-left: 2rem
+    max-width: 400px
+
+  .skills
+    display: grid
+    gap: 2rem
+    grid-template-columns: 0.5fr 1fr
+    justify-content: center
+    align-items: center
+  .skills_title
+    font-size: 2.5rem

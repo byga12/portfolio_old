@@ -6,7 +6,25 @@
   display: flex
   justify-content: center
   align-items: center
-  gap: 1rem
+  gap: 1.5rem
+
+.footer div
+  display: flex
 
 .icon
   width: 30px
+  transition: transform 0.2s ease-out
+  cursor: pointer
+
+.icon:hover
+  transform: scale(1.3)
+
+
+@media (min-width: 1000px)
+  .footer
+    gap: 3rem
+    height: 150px
+
+  .icon
+    width: 40px
+

@@ -4,7 +4,7 @@ import {Router, Route} from 'wouter';
 import Navigation from "./components/Navigation/Navigation";
 import Footer from "./components/Footer/Footer"
 //PAGES
-import About from './pages/About'
+import About from './pages/About/About'
 
 function App() {
   return (
