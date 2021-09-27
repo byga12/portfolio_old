@@ -23,3 +23,8 @@ ul {
   padding: 0;
   list-style: none;
 }
+
+/* custom global properties */
+* {
+  color: #323232;
+}

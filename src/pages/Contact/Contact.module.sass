@@ -1,0 +1,82 @@
+@import '../../utilities/variables'
+
+label
+  display: block
+
+/////////////////////Social media 
+.socialMedia
+  @include container
+  min-height: 50vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  gap: 2rem
+
+.socialMedia_title
+  margin-top: 2rem
+  font-size: 2rem
+
+
+
+////////////////////Form
+
+.formBckg
+  background: $lightGrey
+  padding: 1rem
+  padding-block: 4rem 
+.form
+  @include container
+  display: flex
+  flex-direction: column
+  gap: 3rem
+.form_title
+  font-size: 1.5rem
+
+.fieldContainer
+  max-width: 500px
+.emailLabel, .messageLabel
+  margin-bottom: 1rem
+  font-weight: 700
+  font-size: 1rem
+  font-family: $poppins
+.emailInput, .messageInput
+  width: 100%
+  padding: .5rem
+.messageInput
+  min-height: 200px
+  resize: none
+.sendButton
+  font-family: $poppins
+  font-weight: 600
+  background: $black
+  color: $white
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 100px
+  padding: .5rem
+  width: 100px
+  cursor: pointer
+  border: none
+
+@media (min-width: 500px)
+  .socialMedia_list
+    font-size: 1.1rem
+  .socialMedia_title
+    margin-top: 4rem
+
+  .form
+    align-items: center
+    justify-content: center
+  .form_title
+    font-size: 2rem
+  .form div, 
+    width: 100%
+  .emailLabel, .messageLabel
+    font-size: 1.3rem
+  .emailInput, .messageInput
+    font-size: 1.1rem
+  .sendButton
+    font-size: 1.3rem
+    padding-inline: 4rem
