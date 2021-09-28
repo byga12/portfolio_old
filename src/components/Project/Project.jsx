@@ -9,7 +9,7 @@ export default function Project({title,description,desktopImg,mobileImg,repo,liv
         
         <picture>
           <source media="(min-width: 700px)" srcSet={desktopImg}/>
-          <img src={mobileImg} alt="Element e-commerce sample"/>
+          <img className={s.pictureImage} src={mobileImg} alt="Element e-commerce sample"/>
         </picture>
 
         <div className={s.overlay}>

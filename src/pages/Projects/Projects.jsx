@@ -36,7 +36,7 @@ export default function Projects() {
       desktopImg={desktopPortfolioImg}
       mobileImg={mobilePortfolioImg} 
       repo="https://github.com/byga12/portfolio" 
-      live="https://portfolio-bice-omega.vercel.app/"
+      live="https://portfolio-byga12.vercel.app/"
       />
     </div>
     </div>
