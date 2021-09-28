@@ -1,0 +1,79 @@
+@import '../../utilities/variables'
+
+
+
+.picture_container
+  position: relative
+  max-width: 250px
+
+  
+.overlay 
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.7)
+  transition: all 0.3s ease-in-out
+  opacity: 0
+  visibility: hidden
+  display: flex
+  flex-direction: column
+  padding: 1rem
+  justify-content: center
+
+.picture_container:hover .overlay 
+  opacity: 1
+  visibility: visible 
+  
+
+.overlay_title
+  color: $white
+  font-family: $poppins
+  font-weight: 700
+.overlay_description
+  color: $white
+  font-size: 1rem
+
+
+.links 
+  margin-top: 2rem
+  display: flex
+  justify-content: center
+  flex-direction: column
+  gap: 1rem
+
+.links li
+  align-self: center
+  width: 60%
+  padding-block: .2rem
+  padding-inline: 1.5rem
+  border-radius: 100px
+  background: $white
+  display: flex
+  justify-content: center
+
+
+.links li a
+  display: block
+  white-space: nowrap
+  text-decoration: none
+
+img
+  max-width: 100%
+  //picture deja un espacio en blanco
+  display: block
+
+
+@media (min-width: 500px)
+  .picture_container
+    max-width: 700px
+  .links
+    max-width: 300px
+    margin-top: 0.5rem
+
+@media (min-width: 650px)
+  .overlay
+    padding: 2rem
+  .links
+    flex-direction: row
