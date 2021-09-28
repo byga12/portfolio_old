@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Navigation/>
-      <Route path="/about" component={About}/>
+      <Route path="/" component={About}/>
       <Route path="/contact" component={Contact}/>
       <Route path="/projects" component={Projects}/>
       <Footer/>

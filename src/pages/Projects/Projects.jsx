@@ -35,8 +35,8 @@ export default function Projects() {
       description="this."
       desktopImg={desktopPortfolioImg}
       mobileImg={mobilePortfolioImg} 
-      repo="https://github.com/byga12/react_ecommerce" 
-      live="http://react-ecommerce-ten.vercel.app/"
+      repo="https://github.com/byga12/portfolio" 
+      live="https://portfolio-bice-omega.vercel.app/"
       />
     </div>
     </div>
