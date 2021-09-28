@@ -13,7 +13,7 @@
   left: 0
   width: 100%
   height: 100%
-  background-color: rgba(0, 0, 0, 0.7)
+  background-color: rgba(0, 0, 0, 0.8)
   transition: all 0.3s ease-in-out
   opacity: 0
   visibility: hidden
@@ -22,10 +22,16 @@
   padding: 1rem
   justify-content: center
 
+
+.overlay > *
+  transform: translateY(20px) 
+  transition: transform 0.4s ease-in-out
 .picture_container:hover .overlay 
   opacity: 1
   visibility: visible 
-  
+
+.picture_container:hover .overlay > *
+  transform: translateY(0px) 
 
 .overlay_title
   color: $white
@@ -47,11 +53,14 @@
   align-self: center
   width: 60%
   padding-block: .2rem
-  padding-inline: 1.5rem
   border-radius: 100px
   background: $white
   display: flex
   justify-content: center
+  transition: transform 0.3s ease-out
+
+.links li:hover
+  transform: scale(1.1)
 
 
 .links li a
