@@ -12,7 +12,7 @@ export default function Contact() {
         <h2 className={s.title}>Find me on...</h2>
         <ul className={s.textContent}>
           <li>
-            <a href="https://www.linkedin.com/in/gabriel-shimabuku">
+            <a href="https://www.linkedin.com/in/gabriel-shimabuku" target="_blank" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
               width="96" height="96"
               viewBox="0 0 48 48"
@@ -21,7 +21,7 @@ export default function Contact() {
             </a>
           </li>
           <li>
-            <a href="https://github.com/byga12/">
+            <a href="https://github.com/byga12/" target="_blank" rel="noopener noreferrer">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
               width="96" height="96"
               viewBox="0 0 48 48"

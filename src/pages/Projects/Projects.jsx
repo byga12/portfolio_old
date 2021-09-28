@@ -11,7 +11,7 @@ import mobilePortfolioImg from '../../img/portfolioProject/portfolio_mobile.png'
 
 export default function Projects() {
   return (
-    <div className={s.containerBckg}>
+    <div>
     <h2 className={s.projects_title}>My projects</h2>
     <div className={s.container}>
       <Project 
@@ -24,7 +24,7 @@ export default function Projects() {
       />
       <Project 
       title="CRL Final Challenge" 
-      description="Final Challenge from Kevin Powell's conquering responsive layouts course"
+      description="Final Challenge from Kevin Powell's Conquering Responsive Layouts course."
       desktopImg={desktopCrlImg}
       mobileImg={mobileCrlImg} 
       repo="https://github.com/byga12/CRL-FinalChallenge" 
@@ -32,7 +32,7 @@ export default function Projects() {
       />
       <Project 
       title="Portfolio" 
-      description="this."
+      description="This website was built using create-react-app and Sass."
       desktopImg={desktopPortfolioImg}
       mobileImg={mobilePortfolioImg} 
       repo="https://github.com/byga12/portfolio" 

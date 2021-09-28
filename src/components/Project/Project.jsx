@@ -17,8 +17,8 @@ export default function Project({title,description,desktopImg,mobileImg,repo,liv
           <p className={s.overlay_description}>{description}</p>
 
           <ul className={s.links}>
-            <li><a href={repo}>View Repo</a></li>
-            <li><a href={live}>Live website</a></li>
+            <li><a href={repo} target="_blank" rel="noopener noreferrer">View repo</a></li>
+            <li><a href={live} target="_blank" rel="noopener noreferrer">Live website</a></li>
           </ul>
         </div>
 
