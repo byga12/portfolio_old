@@ -28,9 +28,6 @@ body
   text-decoration: none
   transition: border 0.3s ease-out
 
-.link:visited
-  color: $black
-
 //bottom animation on hover  
 .link:after
   content: ''
@@ -38,14 +35,18 @@ body
   height: 1px
   width: 0px
   background: transparent
-  transition: width 0.5s ease, background 0.5s ease
+  transition: width 0.5s ease, background 0.5s ease, opacity 0.5s ease
 
 .link:hover:after 
   width: 100%
   background: $black
 
 .active
-  border-bottom: 1px solid black
+  opacity: 0.5
+  transition: opacity 0.5s ease
+.active:after
+  opacity: 0.5
+
 
 @media (min-width: 420px)
   .link
