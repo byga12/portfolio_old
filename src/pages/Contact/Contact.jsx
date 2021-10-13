@@ -1,14 +1,19 @@
 import s from './Contact.module.sass'
 
-import React from 'react'
+import React, {useRef} from 'react'
+
+
+//CUSTOM HOOKS
+import useTransitionOnScroll from '../../hooks/useTransitionOnScroll'
 
 export default function Contact() {
-
+  const refs = useRef([]);
+  useTransitionOnScroll(refs.current, s.fadeIn)
 
   return (
-    <div>
+    <div className={s.container}>
 
-      <article className={s.socialMedia}>
+      <article className={s.socialMedia} ref={ref=>refs.current.push(ref)} >
         <h2 className={s.title}>Find me on...</h2>
         <ul className={s.textContent}>
           <li>

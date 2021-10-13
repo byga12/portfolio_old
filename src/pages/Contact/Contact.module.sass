@@ -1,14 +1,23 @@
 @import '../../utilities/variables'
 
+.container
+  min-height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+
+
 /////////////////////Social media 
 .socialMedia
   @include container
-  min-height: 100vh
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
   gap: 1rem
+  opacity: 0
+  transform: translateX(-50px)
+  transition: transform 1s ease-out, opacity 1s ease-out
 
 .title
   // margin-top: 2rem
@@ -24,6 +33,16 @@ a svg
   transition: transform 0.3s ease-out
 a svg:hover
   transform: scale(1.1)
+
+
+
+//////////////////////////////////MODIFIERS
+.fadeIn
+  opacity: 1
+  transform: translateX(0)
+
+
+
 @media (min-width: 500px)
   .textContent
     font-size: 1.2rem

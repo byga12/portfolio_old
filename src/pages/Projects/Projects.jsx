@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import Project from '../../components/Project/Project'
 import s from './Projects.module.sass'
 //IMAGES
@@ -9,10 +9,17 @@ import mobileCrlImg from '../../img/CrlProject/crl_mobile.png'
 import desktopPortfolioImg from '../../img/portfolioProject/portfolio_desktop.png'
 import mobilePortfolioImg from '../../img/portfolioProject/portfolio_mobile.png'
 
+//CUSTOM HOOKS
+import useTransitionOnScroll from '../../hooks/useTransitionOnScroll';
+
 export default function Projects() {
+  const refs = useRef([]);
+
+  useTransitionOnScroll(refs.current, s.fadeIn);
+
   return (
     <div>
-    <h2 className={s.projects_title}>My projects</h2>
+    <h2 className={s.projects_title} ref={ref=>refs.current.push(ref)}>My projects</h2>
     <div className={s.container}>
       <Project 
       title="Element e-commerce" 

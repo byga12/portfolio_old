@@ -7,6 +7,9 @@
   font-size: 2rem
   font-weight: 700
   font-family: $poppins
+  opacity: 0
+  transform: translateX(-50px)
+  transition: transform 1s ease-out, opacity 1s ease-out
 
 .container
   @include container
@@ -16,6 +19,13 @@
   align-items: center
   padding-block: 3rem
   // min-height: 100vh
+
+
+//////////////////////////////////MODIFIERS
+.fadeIn
+  opacity: 1
+  transform: translateX(0)
+
 
 @media (min-width: 400px)
   .projects_title
