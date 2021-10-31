@@ -9,6 +9,7 @@ export default function useObserver(refs, finalStyle) {
   useEffect(()=>{
     const callbackFunction = (entries,observer,element) => {
       const entry = entries[0];
+      console.log(entry);
       if(entry.isIntersecting){
         entry.target.classList.add(finalStyle);
         observer.unobserve(element);

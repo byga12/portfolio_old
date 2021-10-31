@@ -1,6 +1,10 @@
 import React, {useRef} from 'react'
 import Project from '../../components/Project/Project'
 import s from './Projects.module.sass'
+
+//CUSTOM HOOKS
+import useTransitionOnScroll from '../../hooks/useTransitionOnScroll';
+
 //IMAGES
 import desktopElementImg from '../../img/elementProject/element_desktop.png'
 import mobileElementImg from '../../img/elementProject/element_mobile.png'
@@ -8,9 +12,8 @@ import desktopCrlImg from '../../img/CrlProject/crl_desktop.png'
 import mobileCrlImg from '../../img/CrlProject/crl_mobile.png'
 import desktopPortfolioImg from '../../img/portfolioProject/portfolio_desktop.png'
 import mobilePortfolioImg from '../../img/portfolioProject/portfolio_mobile.png'
-
-//CUSTOM HOOKS
-import useTransitionOnScroll from '../../hooks/useTransitionOnScroll';
+import desktopAlkemyImg  from '../../img/alkemyProject/alkemy_desktop.png'
+import mobileAlkemyImg  from '../../img/alkemyProject/alkemy_mobile.png'
 
 export default function Projects() {
   const refs = useRef([]);
@@ -44,6 +47,14 @@ export default function Projects() {
       mobileImg={mobilePortfolioImg} 
       repo="https://github.com/byga12/portfolio" 
       live="https://portfolio-byga12.vercel.app/"
+      />
+      <Project 
+      title="Alkemy Challenge" 
+      description="Team builder made with SuperHero API"
+      desktopImg={desktopAlkemyImg}
+      mobileImg={mobileAlkemyImg} 
+      repo="https://github.com/byga12/alkemy_challenge" 
+      live="https://alkemy-challenge-pied.vercel.app/"
       />
     </div>
     </div>
